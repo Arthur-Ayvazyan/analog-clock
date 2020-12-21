@@ -1,0 +1,72 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clockFace {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background: url(../img/clockFace.png) no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.houer {
+  background: url(../img/houer.png) no-repeat;
+  z-index: 2;
+}
+.minute {
+  background: url(../img/min.png) no-repeat;
+  z-index: 3;
+}
+.second {
+  background: url(../img/sec.png) no-repeat;
+  z-index: 4;
+}
+
+.houer,
+.minute,
+.second {
+  position: absolute;
+  width: 31%;
+  height: 72%;
+  -webkit-background-size: contain;
+  background-size: contain;
+  left: 35%;
+  top: 13.5%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .clockFace {
+    width: 650px;
+    height: 650px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .clockFace {
+    width: 650px;
+    height: 650px;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .clockFace {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .clockFace {
+    width: 300px;
+    height: 300px;
+  }
+}
